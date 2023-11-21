@@ -16,7 +16,7 @@ if __name__ == "__main__":
     options = webdriver.ChromeOptions()
     options.add_argument(r"--user-data-dir=C:\\path\\to\\chrome\\user\\data") #e.g. C:\Users\You\AppData\Local\Google\Chrome\User Data
     url = "https://www.citilink.ru/catalog/noutbuki//"
-    driver = webdriver.Chrome(service=ChromeService(executable_path='C:\\Users\\ETenkin\\Desktop\\ParserCitilink\\chromedriver.exe'),options=options)
+    driver = webdriver.Chrome(service=ChromeService(executable_path='C:\\Users\\user\\Desktop\\ParserCitilink\\chromedriver.exe'),options=options)
     
     driver.get(url)
     WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[2]/div/main/section/div[2]/div/div/section/div[2]/div[2]/div[1]/div/div[3]/div[1]"))) # Название товара
