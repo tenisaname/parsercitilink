@@ -13,3 +13,6 @@ driver = webdriver.Chrome(service=ChromeService(executable_path='C:\\Users\\user
 ```python
 options.add_argument(r"--user-data-dir=C:\\path\\to\\chrome\\user\\data")
 ```
+После этого запустите программу и ждите
+
+Она сформирует excel файл в папке проекта
